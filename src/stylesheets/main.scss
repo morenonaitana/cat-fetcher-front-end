@@ -1,0 +1,73 @@
+body {
+  font-family: sans-serif;
+  background: #2d2d2d;
+
+  
+}
+.container {
+  width: 520px;
+  height: auto;
+  margin: 0 auto;
+  padding: 32px;
+  text-align: center;
+
+  h1 {
+    color: white;
+    text-align: center;
+
+    img {
+      display: inline;
+      width: 54px;
+    }
+  }
+
+  #catInput {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  #giphyme {
+    width: 100%;
+    min-height: 120px;
+    margin-top: 32px;
+    position: relative;
+    background-color: #000000;
+
+    center, img {
+      width: 100%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:after {
+      content: 'waiting for a cat';
+      text-align: center;
+      color: white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+
+  a {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+}

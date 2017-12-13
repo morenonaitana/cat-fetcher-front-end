@@ -1,1 +1,0 @@
-# cat-fetcher-front-end
