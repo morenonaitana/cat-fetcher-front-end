@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create constants
     const btn = document.querySelector('#btnSubmit');
     const catInput = document.getElementById('catInput');
+
+    catInput.addEventListener('keypress', function (e) {
+        var key = e.which || e.keyCode;
+        if (key === 13) { // 13 is enter
+            giphy.gifRequest(catInput.value);
+        }
+    });
     
     // Fetch the cat action from the submit button click
     btn.addEventListener('click', () => {

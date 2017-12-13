@@ -21,17 +21,28 @@ body {
     }
   }
 
+  #btnSubmit {
+    background-color: #1caf57;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 8px;
+  }
+
   #catInput {
     width: 100%;
     margin-bottom: 16px;
+    height: 24px;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
   }
 
   #giphyme {
     width: 100%;
-    min-height: 120px;
     margin-top: 32px;
     position: relative;
-    background-color: #000000;
 
     center, img {
       width: 100%;
@@ -41,16 +52,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-    }
-
-    &:after {
-      content: 'waiting for a cat';
-      text-align: center;
-      color: white;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      z-index: 1;
     }
   }
 }
